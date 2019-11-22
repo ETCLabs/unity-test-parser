@@ -1,0 +1,33 @@
+# The CI pipelines for unity-test-parser.
+
+trigger:
+  branches:
+    include:
+      - develop
+      - master
+      - release/*
+
+pr:
+- develop
+
+jobs:
+- job: run_tests
+  displayName: 'Run unit tests'
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.7'
+      addToPath: true
+  - script: python -m pip install -r test_requirements.txt
+    displayName: 'Install Dependencies'
+  - script: python -m pytest --junitxml=test_results.xml
+    displayName: 'Run Unit Tests'
+  - task: PublishTestResults@2
+    displayName: 'Publish Test Results'
+    condition: always()
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/test_results.xml'
+      testRunTitle: 'pytest results'

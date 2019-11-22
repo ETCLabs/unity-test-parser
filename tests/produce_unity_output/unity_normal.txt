@@ -1,0 +1,25 @@
+Starting tests...
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:92:test_pass_1:PASS
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:93:test_pass_2:PASS
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:43:basic_fail:FAIL
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:44:ignore:IGNORE
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:45:basic_assert_fail:FAIL: Expression Evaluated To FALSE
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:46:boolean_fail:FAIL: Expected TRUE Was FALSE
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:47:equal_int:FAIL: Expected 1 Was 2
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:48:equal_uint8:FAIL: Expected 128 Was 255
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:49:less_than_int:FAIL: Expected 2 to be less than 1
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:50:equal_string:FAIL: Expected 'yes' Was 'no'
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:55:equal_uint8_array:FAIL: Element 2 Expected 3 Was 4
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:57:float_within:FAIL: Expected 2.1 Was 3
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:59:basic_fail_message:FAIL: AAAAA++++++
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:62:boolean_fail_message:FAIL: A message with some spaces
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:66:less_than_int_fail_message:FAIL: Expected 1 to be greater than 2. 1 is not greater than 2, dummy
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:71:pass_with_message:INFO: Diagnostic message...
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:109:pass_with_message:PASS
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:76:fail_with_message:INFO: Another diagnostic message...
+D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:77:fail_with_message:FAIL
+
+-----------------------
+17 Tests 13 Failures 1 Ignored 
+FAIL
+The test is done now!

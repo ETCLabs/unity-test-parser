@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="13" tests="65" time="0.0">
+	<testsuite disabled="0" errors="0" failures="13" name="all_tests" package="all_tests" skipped="1" tests="65" time="0">
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" name="test_pass"/>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="43" name="basic_fail">
+			<failure type="failure">TEST(test_tests, basic_fail)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:43::FAIL</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="44" name="ignore">
+			<skipped type="skipped">TEST(test_tests, ignore)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:44::IGNORE</skipped>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="45" name="basic_assert_fail">
+			<failure message="Expression Evaluated To FALSE" type="failure">TEST(test_tests, basic_assert_fail)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:45::FAIL: Expression Evaluated To FALSE</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="46" name="boolean_fail">
+			<failure message="Expected TRUE Was FALSE" type="failure">TEST(test_tests, boolean_fail)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:46::FAIL: Expected TRUE Was FALSE</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="47" name="equal_int">
+			<failure message="Expected 1 Was 2" type="failure">TEST(test_tests, equal_int)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:47::FAIL: Expected 1 Was 2</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="48" name="equal_uint8">
+			<failure message="Expected 128 Was 255" type="failure">TEST(test_tests, equal_uint8)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:48::FAIL: Expected 128 Was 255</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="49" name="less_than_int">
+			<failure message="Expected 2 to be less than 1" type="failure">TEST(test_tests, less_than_int)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:49::FAIL: Expected 2 to be less than 1</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="50" name="equal_string">
+			<failure message="Expected 'yes' Was 'no'" type="failure">TEST(test_tests, equal_string)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:50::FAIL: Expected 'yes' Was 'no'</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="55" name="equal_uint8_array">
+			<failure message="Element 2 Expected 3 Was 4" type="failure">TEST(test_tests, equal_uint8_array)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:55::FAIL: Element 2 Expected 3 Was 4</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="57" name="float_within">
+			<failure message="Expected 2.1 Was 3" type="failure">TEST(test_tests, float_within)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:57::FAIL: Expected 2.1 Was 3</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="59" name="basic_fail_message">
+			<failure message="AAAAA++++++" type="failure">TEST(test_tests, basic_fail_message)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:59::FAIL: AAAAA++++++</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="60" name="boolean_fail_message">
+			<failure message="A message with some spaces" type="failure">TEST(test_tests, boolean_fail_message)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:60::FAIL: A message with some spaces</failure>
+		</testcase>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="61" name="less_than_int_fail_message">
+			<failure message="Expected 1 to be greater than 2. 1 is not greater than 2, dummy" type="failure">TEST(test_tests, less_than_int_fail_message)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:61::FAIL: Expected 1 to be greater than 2. 1 is not greater than 2, dummy</failure>
+		</testcase>
+		<testcase classname="test_tests" name="pass_with_message"/>
+		<testcase classname="test_tests" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c" line="72" name="fail_with_message">
+			<failure type="failure">TEST(test_tests, fail_with_message)D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\unity_fixture_test_output.c:72::FAIL</failure>
+		</testcase>
+	</testsuite>
+</testsuites>
