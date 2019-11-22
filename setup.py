@@ -18,7 +18,7 @@ URL = "https://github.com/ETCLabs/unity-test-parser"
 EMAIL = "sam.kearney@etcconnect.com"
 AUTHOR = "Sam Kearney"
 REQUIRES_PYTHON = ">=3"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 # What packages are required for this module to be executed?
 REQUIRED = ["junit-xml>=1.8"]

@@ -14,7 +14,7 @@ import re
 _NORMAL_TEST_REGEX = re.compile(r"(?P<file>.+):(?P<line>\d+):(?P<test_name>[^\s:]+):(?P<result>PASS|FAIL|IGNORE)(?:: (?P<message>.+))?")
 _UNITY_FIXTURE_VERBOSE_PREFIX_REGEX = re.compile(r"(?P<prefix>TEST\((?P<test_group>[^\s,]+), (?P<test_name>[^\s\)]+)\))(?P<remainder>.+)?$")
 _UNITY_FIXTURE_REMAINDER_REGEX = re.compile(r"^(?P<file>.+):(?P<line>\d+)::(?P<result>PASS|FAIL|IGNORE)(?:: (?P<message>.+))?")
-_TEST_SUMMARY_BLOCK_REGEX = re.compile(r"^(?P<num_tests>\d+) Tests (?P<num_failures>\d+) Failures (?P<num_ignored>\d+) Ignored\s*\r?\n(?P<overall_result>PASS|FAIL)(?:ED)?", re.MULTILINE)
+_TEST_SUMMARY_BLOCK_REGEX = re.compile(r"^(?P<num_tests>\d+) Tests (?P<num_failures>\d+) Failures (?P<num_ignored>\d+) Ignored\s*\r?\n(?P<overall_result>OK|FAIL)(?:ED)?", re.MULTILINE)
 _TEST_RESULT_ENUM = ["PASS", "FAIL", "IGNORE"]
 # fmt: on
 

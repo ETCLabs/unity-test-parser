@@ -49,6 +49,39 @@ FAIL
             "path/to/second_file.c:101:sample_doesnt_work:FAIL: Expected 1 was 0",
         )
 
+    def test_normal_all_passing(self):
+        results = unity_test_parser.TestResults(
+            """
+path/to/first_file.c:100:sample_works:PASS
+path/to/second_file.c:101:sample_also_works:PASS
+
+-----------------------
+2 Tests 0 Failures 0 Ignored
+OK
+""",
+            unity_test_parser.UNITY_BASIC,
+        )
+        self.assertEqual(results.num_tests(), 2)
+        self.assertEqual(results.num_passed(), 2)
+        self.assertEqual(results.num_failed(), 0)
+        self.assertEqual(results.num_ignored(), 0)
+
+        first_test = results.tests()[0]
+        self.assertEqual(first_test.name(), "sample_works")
+        self.assertEqual(first_test.result(), "PASS")
+        self.assertEqual(first_test.message(), "")
+        self.assertEqual(
+            first_test.full_line(), "path/to/first_file.c:100:sample_works:PASS"
+        )
+
+        second_test = results.tests()[1]
+        self.assertEqual(second_test.name(), "sample_also_works")
+        self.assertEqual(second_test.result(), "PASS")
+        self.assertEqual(second_test.message(), "")
+        self.assertEqual(
+            second_test.full_line(), "path/to/second_file.c:101:sample_also_works:PASS",
+        )
+
     def test_fixture_verbose_valid_input(self):
         results = unity_test_parser.TestResults(
             """
@@ -82,6 +115,37 @@ FAIL
         self.assertEqual(
             second_test.full_line(),
             "TEST(sample, sample_doesnt_work)path/to/file.c:100::FAIL: Expected 1 was 0",
+        )
+
+    def test_fixture_verbose_all_passing(self):
+        results = unity_test_parser.TestResults(
+            """
+TEST(sample, sample_works) PASS
+TEST(sample, sample_also_works) PASS
+
+------------------------
+2 Tests 0 Failures 0 Ignored
+OK
+""",
+            unity_test_parser.UNITY_FIXTURE_VERBOSE,
+        )
+        self.assertEqual(results.num_tests(), 2)
+        self.assertEqual(results.num_passed(), 2)
+        self.assertEqual(results.num_failed(), 0)
+        self.assertEqual(results.num_ignored(), 0)
+
+        first_test = results.tests()[0]
+        self.assertEqual(first_test.name(), "sample_works")
+        self.assertEqual(first_test.result(), "PASS")
+        self.assertEqual(first_test.message(), "")
+        self.assertEqual(first_test.full_line(), "TEST(sample, sample_works) PASS")
+
+        second_test = results.tests()[1]
+        self.assertEqual(second_test.name(), "sample_also_works")
+        self.assertEqual(second_test.result(), "PASS")
+        self.assertEqual(second_test.message(), "")
+        self.assertEqual(
+            second_test.full_line(), "TEST(sample, sample_also_works) PASS",
         )
 
     def test_actual_normal_input(self):
