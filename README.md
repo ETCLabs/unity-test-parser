@@ -1,5 +1,7 @@
 # Unity Test Parser
 
+[![Build Status](https://dev.azure.com/ETCLabs/unity-test-parser/_apis/build/status/ETCLabs.unity-test-parser?branchName=develop)](https://dev.azure.com/ETCLabs/unity-test-parser/_build/latest?definitionId=7&branchName=develop)
+
 A Python 3 module for parsing the console output of the
 [Unity Test Framework](https://github.com/ThrowTheSwitch/Unity). Unity (not to
 be confused with the far more popular graphics framework) is a unit testing
